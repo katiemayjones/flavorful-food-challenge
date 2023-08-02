@@ -23,6 +23,36 @@
       .container {
         max-width: 1000px;
         text-align: center;
+        border: red 10px solid;
+        padding: 0;
+      }
+
+      .navigationBar {
+        background-color: red;
+        font-family: "Old Standard TT", serif;
+        max-width: 1000px;
+        max-height: 300px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+      }
+
+      .fishLogo {
+        font-size: 50px;
+      }
+
+      .historyContainer {
+        border: red 10px solid;
+      }
+
+      .wrapper {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 200px;)
+        grid-gap: 10px;
+      }
+
+      .imageGrid img {
+        width: 100%;
       }
 
       h1 {
@@ -39,6 +69,7 @@
       h2 {
         font-size: 20px;
         font-family: "Old Standard TT", serif;
+        padding-top: 20px;
       }
 
       p {
@@ -51,12 +82,6 @@
         padding: 5px;
       }
 
-      .navigationBar {
-        background-color: red;
-        padding: 20px;
-        font-family: "Old Standard TT", serif;
-      }
-
       .mainImage {
         width: 400px;
         border-radius: 50%;
@@ -65,9 +90,9 @@
     </style>
   </head>
   <body>
-    <div class="container px-4">
+    <div class="container">
       <div class="row navigationBar">
-        <div class="col-2"><i class="fa-solid fa-fish"></i></div>
+        <div class="col-2"><i class="fa-solid fa-fish fishLogo"></i></div>
         <div class="col-2">
           <h2>Home</h2>
         </div>
@@ -85,9 +110,10 @@
         <div class="col">
           <div class="p-5">
             <h1>
-              Indulge in the classic British delight<br />
+              Indulge in the classic British deligh of<br />
               <strong>Fish and Chips!</strong>
             </h1>
+            <hr />
           </div>
         </div>
       </div>
@@ -112,20 +138,55 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="p-5">
-            <h1>History</h1>
-            <p>Description of the history of fish and chips.</p>
+      <hr />
+      <div class="historyContainer">
+        <div class="row">
+          <div class="col">
+            <div class="p-5">
+              <h1>History</h1>
+              <p>
+                The history of British fish and chips dates back to the 19th
+                century, where it emerged as a beloved culinary sensation.
+                Originating in the working-class communities of England, fish
+                and chips quickly became a cheap and filling meal for the masses
+                during the Industrial Revolution. The dish's popularity soared
+                due to the accessibility of fish from coastal regions and the
+                affordability of potatoes, making it an economical choice for
+                many.<br />
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="p-5">
-            <img src="#" />
+          <div class="col">
+            <div class="p-5 imageGrid">
+              <ul class="wrapper">
+                <li>
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/934/original/laurenz-kleinheider-D--HVF4qV0k-unsplash.jpg?1691002352"
+                    class="chipShop"
+                    alt="picture of a traditional fish and chip shop"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/936/original/ambitious-studio-rick-barrett-FbFy6QdcaWA-unsplash.jpg?1691002618"
+                    class="fishAndChips"
+                    alt="people enjoying eating a plate of fish and chips"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/940/original/andy-wang-Pf-bZQpCaMI-unsplash.jpg?1691003476"
+                    class="fishAndChips2"
+                    alt="photo of a plate of fish and chips"
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <hr />
 
       <div class="row">
         <div class="col">
@@ -139,6 +200,7 @@
           </div>
         </div>
       </div>
+      <hr />
 
       <div class="row">
         <div class="col">
