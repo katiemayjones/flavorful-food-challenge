@@ -40,14 +40,12 @@
         font-size: 50px;
       }
 
-      .historyContainer {
-        border: red 10px solid;
-      }
-
-      .wrapper {
+      ul {
         list-style-type: none;
+      }
+      .wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 200px;)
+        grid-template-columns: 50% 50%;
         grid-gap: 10px;
       }
 
@@ -55,6 +53,10 @@
         width: 100%;
       }
 
+      .seperateLine img {
+        width: 205%;
+        display: block;
+      }
       h1 {
         font-size: 70px;
         font-family: "Old Standard TT", serif;
@@ -110,7 +112,7 @@
         <div class="col">
           <div class="p-5">
             <h1>
-              Indulge in the classic British deligh of<br />
+              Indulge in the classic British delight of<br />
               <strong>Fish and Chips!</strong>
             </h1>
             <hr />
@@ -159,29 +161,26 @@
 
           <div class="col">
             <div class="p-5 imageGrid">
-              <ul class="wrapper">
-                <li>
-                  <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/934/original/laurenz-kleinheider-D--HVF4qV0k-unsplash.jpg?1691002352"
-                    class="chipShop"
-                    alt="picture of a traditional fish and chip shop"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/936/original/ambitious-studio-rick-barrett-FbFy6QdcaWA-unsplash.jpg?1691002618"
-                    class="fishAndChips"
-                    alt="people enjoying eating a plate of fish and chips"
-                  />
-                </li>
-                <li>
+              <div class="wrapper">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/934/original/laurenz-kleinheider-D--HVF4qV0k-unsplash.jpg?1691002352"
+                  class="chipShop"
+                  alt="picture of a traditional fish and chip shop"
+                />
+
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/936/original/ambitious-studio-rick-barrett-FbFy6QdcaWA-unsplash.jpg?1691002618"
+                  class="fishAndChips"
+                  alt="people enjoying eating a plate of fish and chips"
+                />
+                <div class="seperateLine">
                   <img
                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/940/original/andy-wang-Pf-bZQpCaMI-unsplash.jpg?1691003476"
                     class="fishAndChips2"
                     alt="photo of a plate of fish and chips"
                   />
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
