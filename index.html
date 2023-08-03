@@ -24,7 +24,8 @@
         background-color: #eaeaea;
         font-family: "Ysabeau Office", sans-serif;
       }
-      .container {
+
+      .container-fluid {
         text-align: center;
         background-color: white;
         padding: 0;
@@ -70,6 +71,7 @@
         text-decoration: solid;
         color: #bea33b;
         font-family: "Ysabeau Office", sans-serif;
+        font-size: 5vw;
       }
 
       .opener {
@@ -84,6 +86,7 @@
         left: 45px;
         text-align: center;
         color: #474747;
+        font-size: 5vw;
       }
 
       .description {
@@ -204,10 +207,19 @@
         cursor: crosshair;
         color: #afafaf;
       }
+      @media (max-width: 768px) {
+        .navigationBar {
+          padding: 5px;
+        }
+
+        h1 {
+          font-size: 4vw;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row navigationBar">
         <div class="col"><i class="fa-solid fa-fish fishLogo"></i></div>
         <div class="col">
