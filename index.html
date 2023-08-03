@@ -37,7 +37,7 @@
         font-family: "Ysabeau Office", sans-serif;
 
         max-width: 100%;
-        max-height: 350px;
+        max-height: none;
         margin: 0 auto;
         padding-bottom: 10px;
         position: sticky;
@@ -71,7 +71,6 @@
         text-decoration: solid;
         color: #bea33b;
         font-family: "Ysabeau Office", sans-serif;
-        font-size: 5vw;
       }
 
       .opener {
@@ -86,7 +85,6 @@
         left: 45px;
         text-align: center;
         color: #474747;
-        font-size: 5vw;
       }
 
       .description {
@@ -208,8 +206,30 @@
         color: #afafaf;
       }
 
-      h1 {
-        font-size: 22vw;
+      @media (max-width: 567px) {
+        p {
+          font-size: 12px;
+        }
+        .title {
+          position: sticky;
+          font-size: 20px;
+        }
+
+        .testimonials {
+          font-size: 60px;
+        }
+        h2 {
+          font-size: 12px;
+        }
+        i,
+        .fishLogo {
+          font-size: 16px;
+        }
+        .mainImage {
+          display: block;
+          align-content: center;
+          max-width: 70%;
+        }
       }
     </style>
   </head>
