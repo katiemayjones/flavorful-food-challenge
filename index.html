@@ -52,6 +52,13 @@
         color: #bea33b;
         opacity: 0.7;
       }
+      h1 {
+        font-size: 70px;
+        font-family: "Old Standard TT", serif;
+        text-decoration: solid;
+        color: #bea33b;
+      }
+
       .opener {
         position: relative;
         display: block;
@@ -113,7 +120,7 @@
 
       .imageGrid img {
         width: 100%;
-        border: #afafaf 2px solid;
+        border: #afafaf 1px solid;
         opacity: 0.7;
         margin: 0 auto;
       }
@@ -121,13 +128,6 @@
       .seperateLine img {
         width: 205%;
         display: block;
-      }
-
-      h1 {
-        font-size: 70px;
-        font-family: "Old Standard TT", serif;
-        text-decoration: solid;
-        color: #bea33b;
       }
 
       .historyDescription {
@@ -157,32 +157,42 @@
       i {
         font-size: 30px;
         padding: 5px;
+        margin-top: 15px;
       }
 
       footer {
         font-family: "Old Standard TT", serif;
-        font-size: 10px;
+        font-size: 12px;
       }
 
       a {
         text-decoration: none;
         cursor: crosshair;
-        color: none;
+        color: #bea33b;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row navigationBar">
-        <div class="col-2"><i class="fa-solid fa-fish fishLogo"></i></div>
-        <div class="col-2">
+        <div class="col"><i class="fa-solid fa-fish fishLogo"></i></div>
+        <div class="col">
           <h2>Home</h2>
         </div>
-        <div class="col-2"><h2>History</h2></div>
-        <div class="col-2"><h2>Testimonials</h2></div>
+        <div class="col">
+          <a href="#history-section"><h2>History</h2></a>
+        </div>
+        <div class="col">
+          <a href="#order-section"><h2>Order Now</h2></a>
+        </div>
+        <div class="col">
+          <a href="#testimonials-section"><h2>Testimonials</h2></a>
+        </div>
 
-        <div class="col-2"><h2>Location</h2></div>
-        <div class="col-2">
+        <div class="col">
+          <a href="#location-section"><h2>Visit Us</h2></a>
+        </div>
+        <div class="col">
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-solid fa-phone"></i>
           <i class="fa-solid fa-envelope"></i>
@@ -256,7 +266,7 @@
       </div>
       <hr />
 
-      <div class="historyContainer">
+      <div class="historyContainer" id="history-section">
         <div class="row">
           <div class="col">
             <div class="p-5">
@@ -327,7 +337,7 @@
         </div>
         <div class="col">
           <div class="p-5">
-            <div class="description">
+            <div class="description" id="order-section">
               <h1>Order Now</h1>
               <p>
                 Savor the perfect blend of crispy golden-brown fish and tender
@@ -342,7 +352,7 @@
       </div>
       <hr />
 
-      <div class="testimonialsWrapper">
+      <div class="testimonialsWrapper" id="testimonials-section">
         <div class="row">
           <div class="col">
             <div class="p-5">
@@ -358,7 +368,7 @@
       </div>
       <hr />
 
-      <div class="visitUsWrapper">
+      <div class="visitUsWrapper" id="location-section">
         <div class="row">
           <div class="col">
             <div class="p-5">
