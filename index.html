@@ -20,8 +20,12 @@
       rel="stylesheet"
     />
     <style>
+      body {
+        background-color: #eaeaea;
+      }
       .container {
         text-align: center;
+        background-color: white;
         padding: 0;
       }
 
@@ -29,7 +33,7 @@
         background-color: white;
         color: #bea33b;
         font-family: "Old Standard TT", serif;
-        max-width: 100%;
+        max-width: 1440px;
         max-height: 350px;
         margin: 0 auto;
         padding-bottom: 10px;
@@ -52,6 +56,7 @@
         color: #bea33b;
         opacity: 0.7;
       }
+
       h1 {
         font-size: 70px;
         font-family: "Old Standard TT", serif;
@@ -66,9 +71,11 @@
       }
 
       .title {
-        left: 20px;
+        position: absolute;
+        top: 300px;
+        left: 25px;
         text-align: center;
-        color: #bea33b;
+        color: #474747;
         z-index: 1;
       }
       .description {
@@ -90,7 +97,8 @@
       }
 
       img {
-        opacity: 0.7;
+        opacity: 0.3;
+        border: #afafaf 1px solid;
       }
 
       .orderNow {
@@ -102,10 +110,12 @@
         padding-bottom: 5px;
         background-color: #bea33b;
         font-size: 24px;
+        transition: ease-in-out 100ms;
       }
 
       .orderNow:hover {
         cursor: crosshair;
+        background-color: #afafaf;
       }
 
       ul {
@@ -141,12 +151,21 @@
       .testimonials {
         font-size: 70px;
         font-family: "Old Standard TT", serif;
+        padding-top: 90px;
+      }
+
+      .testimonialParagraphs {
+        background-color: #eaeaea;
+        border: #afafaf 2px solid;
+        padding: 50px;
+        width: 100%;
+        font-size: 24px;
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 24px;
         font-family: "Old Standard TT", serif;
-        padding-top: 20px;
+        padding-top: 30px;
       }
 
       p {
@@ -169,6 +188,13 @@
         text-decoration: none;
         cursor: crosshair;
         color: #bea33b;
+        transition: ease-in-out 100ms;
+      }
+
+      a:hover {
+        text-decoration: none;
+        cursor: crosshair;
+        color: #afafaf;
       }
     </style>
   </head>
@@ -177,7 +203,7 @@
       <div class="row navigationBar">
         <div class="col"><i class="fa-solid fa-fish fishLogo"></i></div>
         <div class="col">
-          <h2>Home</h2>
+          <a href="#home-section"> <h2>Home</h2></a>
         </div>
         <div class="col">
           <a href="#history-section"><h2>History</h2></a>
@@ -190,9 +216,6 @@
         </div>
 
         <div class="col">
-          <a href="#location-section"><h2>Visit Us</h2></a>
-        </div>
-        <div class="col">
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-solid fa-phone"></i>
           <i class="fa-solid fa-envelope"></i>
@@ -202,7 +225,7 @@
         <div class="col">
           <div class="w-100 p-5">
             <div class="opener">
-              <h1 class="title">
+              <h1 class="title" id="home-section">
                 Indulge in the classic British delight of<br />
                 <strong>Fish and Chips</strong>
               </h1>
@@ -264,127 +287,164 @@
           </div>
         </div>
       </div>
-      <hr />
+      <hr id="history-section" />
 
-      <div class="historyContainer" id="history-section">
-        <div class="row">
-          <div class="col">
-            <div class="p-5">
-              <div class="historyDescription">
-                <h1>History</h1>
-                <p>
-                  The history of British fish and chips dates back to the 19th
-                  century, where it emerged as a beloved culinary sensation.
-                  Originating in the working-class communities of England, fish
-                  and chips quickly became a cheap and filling meal for the
-                  masses during the Industrial Revolution. The dish's popularity
-                  soared due to the accessibility of fish from coastal regions
-                  and the affordability of potatoes, making it an economical
-                  choice for many.<br /><br />
-                  Joseph Malin is often credited with opening the first known
-                  fish and chips shop in London around 1860. Over time, this
-                  iconic combination spread across the nation, with thousands of
-                  shops established to meet the growing demand.
-
-                  <br /><br />
-                  During World War II, fish and chips remained one of the few
-                  foods not rationed, further cementing its status as a national
-                  comfort food. Today, fish and chips continue to thrive in
-                  British culture, with various regional variations and
-                  adaptations, still evoking a sense of nostalgia and taste of
-                  tradition for locals and tourists alike.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="p-5 imageGrid">
-              <div class="wrapper">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/934/original/laurenz-kleinheider-D--HVF4qV0k-unsplash.jpg?1691002352"
-                  class="chipShop"
-                  alt="picture of a traditional fish and chip shop"
-                />
-
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/936/original/ambitious-studio-rick-barrett-FbFy6QdcaWA-unsplash.jpg?1691002618"
-                  class="fishAndChips"
-                  alt="people enjoying eating a plate of fish and chips"
-                />
-                <div class="seperateLine">
-                  <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/940/original/andy-wang-Pf-bZQpCaMI-unsplash.jpg?1691003476"
-                    class="fishAndChips2"
-                    alt="photo of a plate of fish and chips"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-
+      <div class="historyContainer"">
       <div class="row">
         <div class="col">
-          <div class="p-3">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/931/original/andy-wang-g7f8_weqH00-unsplash.jpg?1690996621"
-              class="mainImage"
-            />
-          </div>
-        </div>
-        <div class="col">
           <div class="p-5">
-            <div class="description" id="order-section">
-              <h1>Order Now</h1>
+            <div class="historyDescription">
+              <h1>History</h1>
               <p>
-                Savor the perfect blend of crispy golden-brown fish and tender
-                potato fries, seasoned to perfection. This mouthwatering dish is
-                a timeless favorite, bringing you a taste of nostalgia and
-                satisfaction in every bite.<br />
-                <button class="orderNow">Order Now</button>
+                The history of British fish and chips dates back to the 19th
+                century, where it emerged as a beloved culinary sensation.
+                Originating in the working-class communities of England, fish
+                and chips quickly became a cheap and filling meal for the masses
+                during the Industrial Revolution. The dish's popularity soared
+                due to the accessibility of fish from coastal regions and the
+                affordability of potatoes, making it an economical choice for
+                many.<br /><br />
+                Joseph Malin is often credited with opening the first known fish
+                and chips shop in London around 1860. Over time, this iconic
+                combination spread across the nation, with thousands of shops
+                established to meet the growing demand.
+
+                <br /><br />
+                During World War II, fish and chips remained one of the few
+                foods not rationed, further cementing its status as a national
+                comfort food. Today, fish and chips continue to thrive in
+                British culture, with various regional variations and
+                adaptations, still evoking a sense of nostalgia and taste of
+                tradition for locals and tourists alike.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <hr />
 
-      <div class="testimonialsWrapper" id="testimonials-section">
-        <div class="row">
-          <div class="col">
-            <div class="p-5">
-              <h1 class="testimonials"><em>Testimonials</em></h1>
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-5">
-              <p>People's testimonals cycling through</p>
+        <div class="col">
+          <div class="p-5 imageGrid">
+            <div class="wrapper">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/934/original/laurenz-kleinheider-D--HVF4qV0k-unsplash.jpg?1691002352"
+                class="chipShop"
+                alt="picture of a traditional fish and chip shop"
+              />
+
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/936/original/ambitious-studio-rick-barrett-FbFy6QdcaWA-unsplash.jpg?1691002618"
+                class="fishAndChips"
+                alt="people enjoying eating a plate of fish and chips"
+              />
+              <div class="seperateLine">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/940/original/andy-wang-Pf-bZQpCaMI-unsplash.jpg?1691003476"
+                  class="fishAndChips2"
+                  alt="photo of a plate of fish and chips"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <hr />
-
-      <div class="visitUsWrapper" id="location-section">
-        <div class="row">
-          <div class="col">
-            <div class="p-5">
-              <h1>Visit Us</h1>
-            </div>
-          </div>
-
-          <div class="col"><div class="p-5">Google Maps API</div></div>
-        </div>
-      </div>
-
-      <footer>
-        Open source code by
-        <a href="https://github.com/katiemayjones/">Katiemay 👩🏼‍💻</a>
-      </footer>
     </div>
+    <hr id="order-section" />
+
+    <div class="row">
+      <div class="col">
+        <div class="p-3">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/931/original/andy-wang-g7f8_weqH00-unsplash.jpg?1690996621"
+            class="mainImage"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-5">
+          <div class="description" ">
+          <h1>Order Now</h1>
+          <p>
+            Savor the perfect blend of crispy golden-brown fish and tender
+            potato fries, seasoned to perfection. This mouthwatering dish is a
+            timeless favorite, bringing you a taste of nostalgia and
+            satisfaction in every bite.<br />
+            <button class="orderNow">Order Now</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonialsWrapper" id="testimonials-section">
+      <hr />
+      <div class="row">
+        <div class="col">
+          <div class="p-5">
+            <h1 class="testimonials"><em>Testimonials</em></h1>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-5">
+            <div
+              id="carousel-testimonials"
+              class="carousel slide testimonialParagraphs"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p>
+                    "Fish and chips brings back memories of my children. Seeing
+                    my breath on the air, the smell of the sea and the sand
+                    whilst the fish and chip paper crinkles in my hand. It is
+                    the taste of childhood!"
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "Fish and chips are for everyone, no matter who you are or
+                    where you are from." <br /><br />
+                  </p>
+                  <br />
+                </div>
+                <div class="carousel-item">
+                  <p>
+                    "A traditional British meal! You can find a good 'chippy'
+                    anywhere in the country." <br /><br /><br />
+                  </p>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carousel-testimonials"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel-testimonials"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Open source code by
+      <a href="https://github.com/katiemayjones/">Katiemay 👩🏼‍💻</a>
+    </footer>
   </body>
   <script
     src="https://kit.fontawesome.com/b1106a3785.js"
