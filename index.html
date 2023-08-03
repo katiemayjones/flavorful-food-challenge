@@ -30,16 +30,26 @@
       .navigationBar {
         background-color: red;
         font-family: "Old Standard TT", serif;
-        max-width: 1000px;
+        max-width: 100%;
         max-height: 300px;
         margin: 0 auto;
         padding-bottom: 10px;
+        position: sticky;
+        top: 0;
+        overflow-x: hidden;
+        z-index: 1;
+        transition: 0.5;
       }
 
       .fishLogo {
         font-size: 50px;
       }
 
+      hr {
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+      }
       ul {
         list-style-type: none;
       }
@@ -51,6 +61,9 @@
 
       .imageGrid img {
         width: 100%;
+        border: red 2px solid;
+        opacity: 0.7;
+        border-radius: 10px;
       }
 
       .seperateLine img {
@@ -85,9 +98,19 @@
       }
 
       .mainImage {
-        width: 400px;
+        width: 500px;
         border-radius: 50%;
-        border: red 10px solid;
+        border: red 2px solid;
+        opacity: 0.7;
+      }
+
+      footer {
+        font-family: "Old Standard TT", serif;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: crosshair;
       }
     </style>
   </head>
@@ -113,12 +136,13 @@
           <div class="p-5">
             <h1>
               Indulge in the classic British delight of<br />
-              <strong>Fish and Chips!</strong>
+              <strong>Fish and Chips</strong>
             </h1>
-            <hr />
           </div>
         </div>
       </div>
+      <hr />
+
       <div class="row">
         <div class="col">
           <div class="p-3">
