@@ -50,6 +50,12 @@
         font-size: 50px;
       }
 
+      i {
+        font-size: 50px;
+        padding: 5px;
+        margin-top: 25px;
+      }
+
       hr {
         max-width: 1000px;
         display: block;
@@ -78,7 +84,6 @@
         left: 25px;
         text-align: center;
         color: #474747;
-        z-index: 1;
       }
       .description {
         background-color: #eaeaea;
@@ -89,6 +94,7 @@
 
         border: #afafaf 2px solid;
         font-size: 20px;
+        box-shadow: #bea33b 5px 5px 2px;
       }
 
       .mainImage {
@@ -106,18 +112,19 @@
       .orderNow {
         margin-top: 50px;
         margin-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        background-color: #bea33b;
+        padding: 10px;
+        background-color: #afafaf;
+        border: #474747 1px solid;
         font-size: 18px;
         transition: ease-in-out 100ms;
+        box-shadow: #bea33b 5px 5px 2px;
       }
 
       .orderNow:hover {
         cursor: crosshair;
-        background-color: #afafaf;
+        background-color: #474747;
+        color: #afafaf;
+        transition: ease-in-out 100ms;
       }
 
       ul {
@@ -149,6 +156,7 @@
         padding-top: 20px;
         padding-left: 10px;
         padding-right: 10px;
+        box-shadow: #bea33b 5px 5px 2px;
       }
       .testimonials {
         font-size: 70px;
@@ -162,6 +170,7 @@
         padding: 50px;
         width: 100%;
         font-size: 24px;
+        box-shadow: #bea33b 5px 5px 2px;
       }
 
       h2 {
@@ -173,12 +182,6 @@
       p {
         font-size: 20px;
         font-family: "Ysabeau Office", sans-serif;
-      }
-
-      i {
-        font-size: 30px;
-        padding: 5px;
-        margin-top: 15px;
       }
 
       footer {
@@ -219,9 +222,11 @@
         </div>
 
         <div class="col">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-solid fa-phone"></i>
-          <i class="fa-solid fa-envelope"></i>
+          <a
+            href="https://www.instagram.com/explore/tags/fishandchips/?hl=en"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
       </div>
       <div class="row">
@@ -370,8 +375,11 @@
             potato fries, seasoned to perfection. This mouthwatering dish is a
             timeless favorite, bringing you a taste of nostalgia and
             satisfaction in every bite.<br />
-            <button class="orderNow">Order Now with your favourite app!</button>
           </p>
+
+          <form action="https://www.ubereats.com/" target="_blank">
+            <button class="orderNow">Order Now with UberEats!</button>
+          </form>
         </div>
       </div>
     </div>
