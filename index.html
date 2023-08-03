@@ -30,7 +30,7 @@
         color: #bea33b;
         font-family: "Old Standard TT", serif;
         max-width: 100%;
-        max-height: 300px;
+        max-height: 350px;
         margin: 0 auto;
         padding-bottom: 10px;
         position: sticky;
@@ -52,11 +52,19 @@
         color: #bea33b;
         opacity: 0.7;
       }
-
       .opener {
-        background-image: ;
+        position: relative;
+        display: block;
+        margin: 0 auto;
       }
 
+      .title {
+        position: absolute;
+        left: 20px;
+        text-align: center;
+        color: #eaeaea;
+        padding-top: 100px;
+      }
       .description {
         background-color: #eaeaea;
         width: 100%;
@@ -69,6 +77,7 @@
       }
 
       .mainImage {
+        margin-top: 50px;
         width: 100%;
         border: #afafaf 2px solid;
         opacity: 0.7;
@@ -173,38 +182,22 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="p-5">
-            <h1 class="opener">
-              Indulge in the classic British delight of<br />
-              <strong>Fish and Chips</strong>
-            </h1>
+          <div class="w-100 p-5">
+            <div class="opener">
+              <h1 class="title">
+                Indulge in the classic British delight of<br />
+                <strong>Fish and Chips</strong>
+              </h1>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/994/original/farrah-k-NNIksBnWnIU-unsplash.jpg?1691053820"
+                width="1200px;"
+              />
+            </div>
           </div>
         </div>
       </div>
       <hr />
 
-      <div class="row">
-        <div class="col">
-          <div class="p-3">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/931/original/andy-wang-g7f8_weqH00-unsplash.jpg?1690996621"
-              class="mainImage"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-5">
-            <p class="description">
-              Savor the perfect blend of crispy golden-brown fish and tender
-              potato fries, seasoned to perfection. This mouthwatering dish is a
-              timeless favorite, bringing you a taste of nostalgia and
-              satisfaction in every bite.<br />
-              <button class="orderNow">Order Now</button>
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
       <div class="historyContainer">
         <div class="row">
           <div class="col">
@@ -259,6 +252,32 @@
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col">
+          <div class="p-3">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/931/original/andy-wang-g7f8_weqH00-unsplash.jpg?1690996621"
+              class="mainImage"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-5">
+            <div class="description">
+              <h1>Order Now</h1>
+              <p>
+                Savor the perfect blend of crispy golden-brown fish and tender
+                potato fries, seasoned to perfection. This mouthwatering dish is
+                a timeless favorite, bringing you a taste of nostalgia and
+                satisfaction in every bite.<br />
+                <button class="orderNow">Order Now</button>
+              </p>
             </div>
           </div>
         </div>
