@@ -59,11 +59,10 @@
       }
 
       .title {
-        position: absolute;
         left: 20px;
         text-align: center;
-        color: #eaeaea;
-        padding-top: 100px;
+        color: #bea33b;
+        z-index: 1;
       }
       .description {
         background-color: #eaeaea;
@@ -83,14 +82,23 @@
         opacity: 0.7;
       }
 
+      img {
+        opacity: 0.7;
+      }
+
       .orderNow {
         margin-top: 50px;
         margin-bottom: 30px;
         padding-left: 10px;
         padding-right: 10px;
-
         padding-top: 5px;
         padding-bottom: 5px;
+        background-color: #bea33b;
+        font-size: 24px;
+      }
+
+      .orderNow:hover {
+        cursor: crosshair;
       }
 
       ul {
@@ -188,10 +196,60 @@
                 Indulge in the classic British delight of<br />
                 <strong>Fish and Chips</strong>
               </h1>
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/994/original/farrah-k-NNIksBnWnIU-unsplash.jpg?1691053820"
-                width="1200px;"
-              />
+
+              <div
+                id="carouselOpener"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100"
+                      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/994/original/farrah-k-NNIksBnWnIU-unsplash.jpg?1691053820"
+                      alt="First slide"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/995/original/joana-godinho-Gwv-t9VQiPM-unsplash.jpg?1691053830 "
+                      alt="Second slide"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/996/original/henry-perks-a_3InP6-xhg-unsplash.jpg?1691056850"
+                      alt="Third slide"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselOpener"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselOpener"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -320,6 +378,21 @@
   </body>
   <script
     src="https://kit.fontawesome.com/b1106a3785.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
 </html>
